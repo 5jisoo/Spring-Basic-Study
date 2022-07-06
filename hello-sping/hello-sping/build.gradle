@@ -1,0 +1,26 @@
+/*버전이나 라이브러리를 설정하는 부분이구나 정도만 확인하기?*/
+
+plugins {
+	id 'org.springframework.boot' version '2.7.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'hello'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+/*템플릿엔진과 웹프로젝트 선택했던게 여기 들어감*/
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
