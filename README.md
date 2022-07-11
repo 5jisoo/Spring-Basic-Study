@@ -15,6 +15,6 @@
 
 > https://5ji-record.tistory.com/67
 <br>
-✔️ SECTION3 내용 정리: 
+✔️ SECTION4 내용 정리: 
 
 > https://5ji-record.tistory.com/68
