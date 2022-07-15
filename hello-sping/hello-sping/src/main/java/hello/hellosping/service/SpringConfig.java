@@ -1,5 +1,6 @@
 package hello.hellosping.service;
 
+import hello.hellosping.aop.TimeTraceAop;
 import hello.hellosping.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
