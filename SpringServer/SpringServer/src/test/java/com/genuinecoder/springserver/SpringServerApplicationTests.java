@@ -18,9 +18,9 @@ class SpringServerApplicationTests {
 	void addEmployeeTest() {
 		Employee employee = new Employee();
 		//id는 스프링에서 자동으로 만들어줌.
-		employee.setName("Rachel");
-		employee.setLocation("Building-5");
-		employee.setBranch("IT");
+		employee.setName("Bruce");
+		employee.setLocation("Building-X");
+		employee.setBranch("Security");
 		employeeDao.save(employee);
 
 	}
@@ -35,7 +35,9 @@ class SpringServerApplicationTests {
 	void getAllEmployeesAndDeleteThem(){
 		List<Employee> employeeList = employeeDao.getAllEmployees();
 		for(Employee employee : employeeList){
-			employeeDao.delete(employee);
+			employeeDao.delete(employee.getId());
 		}
 	}
+
+
 }
