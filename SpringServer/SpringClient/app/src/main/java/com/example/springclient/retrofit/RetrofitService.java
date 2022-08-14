@@ -14,7 +14,7 @@ public class RetrofitService {
 
     private void initializeRetrofit() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.16:9000") //cmd 창에서
+                .baseUrl("http://192.168.0.16:9000") //cmd 창에서 확인 가능
                 .addConverterFactory(GsonConverterFactory.create(new Gson()))
                 .build();
     }
