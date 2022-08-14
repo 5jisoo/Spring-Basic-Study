@@ -3,8 +3,6 @@ package com.example.springclient;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.springclient.model.Employee;
@@ -20,7 +18,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity {
+public class EmployeeForm extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,13 +51,13 @@ public class MainActivity extends AppCompatActivity {
                     .enqueue(new Callback<Employee>() {
                         @Override
                         public void onResponse(Call<Employee> call, Response<Employee> response) {
-                            Toast.makeText(MainActivity.this, "Save successful!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EmployeeForm.this, "Save successful!!", Toast.LENGTH_SHORT).show();
                         }
 
                         @Override
                         public void onFailure(Call<Employee> call, Throwable t) {
-                            Toast.makeText(MainActivity.this, "Save failed!!", Toast.LENGTH_SHORT).show();
-                            Logger.getLogger(MainActivity.class.getName()).log(Level.SEVERE, "Error occurred", t);
+                            Toast.makeText(EmployeeForm.this, "Save failed!!", Toast.LENGTH_SHORT).show();
+                            Logger.getLogger(EmployeeForm.class.getName()).log(Level.SEVERE, "Error occurred", t);
                         }
                     });
         });
