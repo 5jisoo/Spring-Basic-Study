@@ -13,30 +13,31 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    //메서드명을 보는 순간 역할을 다 알게 만들어라
 
     //memberService 역할
     @Bean
     public MemberService memberService(){
+        System.out.println("call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
     //memberRepository 역할
     @Bean
     public MemberRepository memberRepository() {
+        System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
     //orderService 역할
     @Bean
     public OrderService orderService(){
+        System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
     //discountPolicy 역할
     @Bean
     public DiscountPolicy discountPolicy(){
-        //return new FixDiscountPolicy();
         return new RateDiscountPolicy();
     }
 }
