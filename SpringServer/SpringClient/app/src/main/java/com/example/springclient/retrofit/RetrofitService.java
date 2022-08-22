@@ -14,7 +14,7 @@ public class RetrofitService {
 
     private void initializeRetrofit() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.16:9000") //cmd 창에서 확인 가능
+                .baseUrl("http://3.37.128.158/") // aws로 연 서버에 연결해봄
                 .addConverterFactory(GsonConverterFactory.create(new Gson()))
                 .build();
     }
