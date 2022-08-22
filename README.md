@@ -1,5 +1,5 @@
 # Spring-Study
-### [2022] 스프링 스터디 기록
+### [2022 Summer] 스프링 스터디 기록
 
 https://bit.ly/3clfhKs
 
