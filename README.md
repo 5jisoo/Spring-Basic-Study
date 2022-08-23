@@ -1,4 +1,4 @@
-# Spring-Study
+# Spring-Basic-Study
 ### [2022 Summer] 스프링 스터디 기록
 
 https://bit.ly/3clfhKs
